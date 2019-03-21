@@ -10,17 +10,15 @@ public class Main {
         boolean correct = false;
 
         Scanner keyboard = new Scanner(System.in);
-
-        while (!correct);
-
         System.out.println("Guess a number between one and one hundred");
         guess = keyboard.nextInt();
 
-        if (guess > secretNumber) {
-            System.out.println("Guess again, pick a lower number");
+
+        if (guess == secretNumber) {
+            System.out.println("Correct!");
         } else if (guess < secretNumber) {
             System.out.println("Guess again, pick a higher number");
-        } else if (guess == secretNumber) {
-            correct = true;
-            System.out.println("Correct!");
+        } else if (guess > secretNumber) {
+                System.out.println("Guess again, pick a lower number");
+            while (!correct);
     }}}
