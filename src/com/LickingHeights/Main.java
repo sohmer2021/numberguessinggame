@@ -10,6 +10,9 @@ public class Main {
 
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Guess a number between one and one hundred");
+        boolean loop = true;
+        while (loop){
+
         guess = keyboard.nextInt();
 
         if (guess == secretNumber) {
@@ -18,6 +21,5 @@ public class Main {
             System.out.println("Guess again, pick a higher number");
         } else if (guess > secretNumber) {
                 System.out.println("Guess again, pick a lower number");
-            boolean loop = true;
-            while(loop){
+
     }}}}
