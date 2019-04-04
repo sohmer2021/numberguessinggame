@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args) {
 
         int secretNumber = (int)(Math.random()*100);
-        System.out.println(secretNumber);
         int guess;
 
         Scanner keyboard = new Scanner(System.in);
